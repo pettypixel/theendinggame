@@ -1,0 +1,15 @@
+##	Download this repository
+git clone https://github.com/Camch/theendinggame.git
+
+##	Install all node packages
+
+cd into directory (theendinggame)
+npm install
+
+cd into frontend directory
+npm install
+
+##	Run react app
+npm start
+
+
