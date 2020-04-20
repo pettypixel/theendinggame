@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 function No () {
     return(
         <div>
-            <Button> NO </Button>
+            <Button> NO I WANT TO STAY </Button>
         </div>
     );
 }
