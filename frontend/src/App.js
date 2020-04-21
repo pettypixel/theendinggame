@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 
-
-import Options from './Components/Buttons/Options';
+import TheGame from './Components/TheGame'
 
 function App() {
   return (
     <div className="App">
-        <Options> </Options>
+        <TheGame></TheGame>
     </div>
   );
 }

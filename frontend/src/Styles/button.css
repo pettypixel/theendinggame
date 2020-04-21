@@ -1,3 +1,10 @@
-.answer {
+.yes-btn {
     margin: 5px;
+    background-color: green;
+    color: green;
+}
+
+.no-btn {
+    margin:  5px;
+    background-color: red;
 }

@@ -4,9 +4,12 @@ import '../../Styles/button.css'
 
 class Options extends Component {
 
-/*firstAnswer = [];
+firstAnswer = [ 
+    { "Yes": 1 },
+    { "No": 0} 
+];
 secondAnswer = [];
-lastAnswer = []; */
+lastAnswer = [];
 
 constructor (props) {
     super(props);
@@ -24,15 +27,21 @@ constructor (props) {
         { "No" : 0 }
     ]
  }
+ console.log(this.firstAnswer.value)
     this.handleEvent = this.handleEvent.bind(this);
 }
 
-handleEvent(){
-
+handleEvent(event){
+    if(event.value === 1) {
+        console.log("Inside the first if in handleEvent");
+    }
 }
 
-handleAnswer(answer){
+handleAnswer(){
+  //  console.log(this.firstAnswer +  "hello");
+
     if ( this.firstAnswer.value === 0 ){
+
         console.log("You've clicked Yes");
     } else{
         console.log("Go to question 2");
@@ -44,14 +53,14 @@ handleAnswer(answer){
         console.log("Go to question 3");
     }
 
-    console.log(answer);
+    console.log("world");
 }
 
 render () { 
     return  <div>
         <h2> Hi and Welcome to this test and find out if you're allowed to go outside</h2>            
-            <Button className="answer"> YES I WANT TO CONTINUE </Button>
-            <Button className="answer"> NO I WANT TO STAY </Button>
+            <Button className="yes" onClick={this.handleAnswer}> YES I WANT TO CONTINUE </Button>
+            <Button className="no"> NO I WANT TO STAY </Button>
         </div>
     }
 }
